@@ -1,0 +1,27 @@
+{
+  "minify": true,
+  "jsc": {
+    "jsc": {
+      "minify": {
+        "compress": {
+          "unused": true
+        },
+        "mangle": true
+      }
+    },
+    "parser": {
+      "syntax": "typescript",
+      "tsx": false,
+      "decorators": true,
+      "dynamicImport": false
+    },
+    "target": "esnext",
+    "baseUrl": "./src/",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  },
+  "module": {
+    "type": "commonjs"
+  }
+}
